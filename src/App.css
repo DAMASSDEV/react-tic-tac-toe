@@ -87,6 +87,47 @@
   background-color: white;
 }
 
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header > .title {
+  margin: 0 auto;
+  font-size: 1.5rem;
+  font-family: monospace;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+}
+
+main #title-player > .box-player {
+  width: 150px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px 0px black;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+main #main-player {
+  display: flex;
+  column-gap: 20px;
+}
+
+.game-info > h1 {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
 .game {
   display: flex;
   justify-content: center;
@@ -102,7 +143,7 @@
   list-style: none;
 }
 
-.game-info ol li button{
+.game-info ol li button {
   min-width: 150px;
   background-color: rgb(241, 241, 241);
   border-radius: 5px;
@@ -126,34 +167,12 @@
   width: 300px;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-header > h1 {
-  margin: 0 auto;
-  font-size: 1.5rem;
-  font-family: monospace;
-}
-
-header p {
-  max-width: fit-content;
-  background-color: white;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 3px 5px 0px black;
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-main .game-info>h1 {
-  font-weight: 400;
-  font-size: 1rem;
-}
-
 .winner {
   background-color: greenyellow;
 }
+
+.winner:hover {
+  background-color: white;
+  outline: 2px solid green;
+}
+
